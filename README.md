@@ -1,5 +1,3 @@
-Sure! Here is a GitHub-formatted README for your project:
-
 ```markdown
 # Facial Recognition and Image Processing
 
