@@ -16,7 +16,7 @@ This project implements various facial recognition and image processing features
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/facial_recognition.git
+    git clone https://github.com/omgitsbees/facial_recognition.git
     cd facial_recognition
     ```
 
