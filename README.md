@@ -1,6 +1,96 @@
 
 ------------------------------------------------------------------------------------------------------------------------------------
 
+# Analyzing Satellite Images
+
+A modular Python pipeline for advanced analysis of satellite imagery using deep learning and computer vision. This project demonstrates classification, segmentation, object detection, cloud masking, and change detection on multi-spectral satellite data (e.g., Sentinel-2).
+
+---
+
+## Features
+
+- **Land Cover Classification**: Classifies satellite images into categories such as water, forest, urban, agriculture, and barren.
+- **Semantic Segmentation**: Pixel-wise land cover mapping using a U-Net style deep learning model.
+- **Object Detection**: Detects objects (e.g., buildings, roads) in satellite RGB images using Faster R-CNN.
+- **Cloud Masking**: Identifies and masks cloud pixels using NDSI or brightness thresholding.
+- **Change Detection**: Detects changes between two satellite images (e.g., before/after events).
+- **Multi-Spectral Support**: Handles multi-band imagery (e.g., Sentinel-2, Landsat).
+
+---
+
+## Tech Stack
+
+- **Python 3.8+**
+- [PyTorch](https://pytorch.org/) (Deep Learning)
+- [torchvision](https://pytorch.org/vision/stable/index.html) (Models & Transforms)
+- [Pillow](https://python-pillow.org/) (Image I/O)
+- [rasterio](https://rasterio.readthedocs.io/) (Geospatial raster data)
+- [numpy](https://numpy.org/) (Numerical computing)
+
+---
+
+## Quick Start
+
+### 1. Install Dependencies
+
+```bash
+pip install torch torchvision pillow rasterio numpy
+```
+
+### 2. Prepare Data
+
+- Place your multi-spectral satellite images (e.g., Sentinel-2 `.tif` files) in the working directory.
+- Place an RGB satellite image (e.g., `.jpg` or `.png`) for object detection.
+
+### 3. Run the Script
+
+```bash
+python Analyzing_Satellite_Images.py
+```
+
+---
+
+## Example Output
+
+- **Classification**: Prints the predicted land cover class for the input image.
+- **Segmentation**: Prints the shape of the segmentation mask.
+- **Object Detection**: Prints detected objects and their bounding boxes.
+- **Cloud Masking**: Prints the shape of the cloud mask.
+- **Change Detection**: Prints the shape of the change map between two images.
+
+---
+
+## Extending the Pipeline
+
+- **Train with your own data**: Replace or fine-tune the models with your labeled satellite datasets.
+- **Add more classes**: Expand `CLASS_NAMES` and retrain models for additional land cover types.
+- **Integrate with GIS tools**: Export results as GeoTIFF or visualize with QGIS/ArcGIS.
+- **Deploy as a service**: Wrap the pipeline in a FastAPI or Flask app for web-based inference.
+
+---
+
+## Project Structure
+
+```
+Analyzing_Satellite_Images.py
+sentinel2_image.tif
+sentinel2_image_later.tif
+sample_satellite.jpg
+```
+
+---
+
+## License
+
+MIT License
+
+---
+
+**Contributions and feedback are welcome!**  
+For questions or suggestions, please open an issue or submit a pull request.
+
+------------------------------------------------------------------------------------------------------------------------------------
+
 # Ad Targeting Content Moderation Pipeline
 
 A modular Python pipeline for **multi-modal content moderation** in ad targeting and digital marketing. This project provides conceptual and practical tools for moderating text, images, video, and audio content to ensure brand safety and compliance in advertising platforms.
