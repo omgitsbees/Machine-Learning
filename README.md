@@ -1,6 +1,85 @@
 
 ------------------------------------------------------------------------------------------------------------------------------------
 
+# Creator Analytics
+
+A Python tool for analyzing and visualizing YouTube channel statistics. This project enables you to fetch subscriber counts, total views, and video counts for multiple channels, and compare them visually using bar plots.
+
+---
+
+## Features
+
+- **Fetch Channel Stats**: Scrapes subscriber, view, and video counts from YouTube channel pages.
+- **Batch Analysis**: Analyze multiple channels at once.
+- **Visualization**: Compare channels with clear bar plots for subscribers, views, and video counts.
+- **Extensible**: Easily add more channels or extend to other platforms.
+- **Simple Interface**: Just provide a list of YouTube channel URLs.
+
+---
+
+## Tech Stack
+
+- **Python 3.8+**
+- [requests](https://docs.python-requests.org/)
+- [BeautifulSoup4](https://www.crummy.com/software/BeautifulSoup/)
+- [pandas](https://pandas.pydata.org/)
+- [matplotlib](https://matplotlib.org/)
+- [seaborn](https://seaborn.pydata.org/)
+
+---
+
+## Quick Start
+
+### 1. Install Dependencies
+
+```bash
+pip install requests beautifulsoup4 pandas matplotlib seaborn
+```
+
+### 2. Run the Script
+
+Edit the `channel_list` in the `__main__` block to include your desired YouTube channels.
+
+```bash
+python Creator_Analytics.py
+```
+
+---
+
+## Example Output
+
+- Prints a table of channel statistics (subscribers, views, videos).
+- Displays bar plots comparing each channel’s subscribers, views, and video counts.
+
+---
+
+## Notes
+
+- **Web Scraping Warning**: This script scrapes YouTube’s public channel pages. YouTube’s HTML structure may change, which can break the scraper. For production use, consider the [YouTube Data API](https://developers.google.com/youtube/v3).
+- **Data Accuracy**: Scraped numbers may be formatted (e.g., "1.2M subscribers") and are converted to numeric values for plotting.
+- **Extending**: You can add more features, such as fetching channel descriptions, recent video stats, or integrating with the YouTube API.
+
+---
+
+## Project Structure
+
+```
+Creator_Analytics.py
+```
+
+---
+
+## License
+
+MIT License
+
+---
+
+**Contributions and feedback are welcome!**  
+For questions or suggestions, please open an issue or submit a pull request.
+
+------------------------------------------------------------------------------------------------------------------------------------
+
 # Copyright Infringement Detection
 
 A deep learning pipeline for detecting copyright infringement in video and audio content descriptions. This project uses an LSTM neural network with GloVe word embeddings to classify whether a given text is likely to indicate copyright infringement.
