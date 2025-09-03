@@ -4,7 +4,7 @@
 # Improve Traffic Management with Machine Learning
 
 A modular Python pipeline for analyzing, predicting, and optimizing urban traffic using machine learning and graph algorithms. This project demonstrates real-time traffic prediction, incident detection, congestion hotspot analysis, route optimization, and event impact analysis for smart city and transportation applications.
-
+ 
 ---
 
 ## Features
